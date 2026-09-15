@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>كلاتش روزا | Shinny</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="solid">
+  <div class="logo">Shinny</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="shop.html" class="active">التشكيلة</a></li>
+      <li><a href="about.html">من نحن</a></li>
+      <li><a href="contact.html">تواصل</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="product-detail">
+  <div class="gallery">
+    <div class="gallery-main">
+      <img id="mainImg" src="images/IMG_4286.jpeg" alt="كلاتش روزا بإطار ذهبي منقوش">
+    </div>
+    <div class="gallery-thumbs">
+      <img src="images/IMG_4286.jpeg" class="active" onclick="document.getElementById('mainImg').src=this.src; document.querySelectorAll('.gallery-thumbs img').forEach(i=>i.classList.remove('active')); this.classList.add('active');">
+      <img src="images/IMG_4287.jpeg" onclick="document.getElementById('mainImg').src=this.src; document.querySelectorAll('.gallery-thumbs img').forEach(i=>i.classList.remove('active')); this.classList.add('active');">
+      <img src="images/IMG_4285.jpeg" onclick="document.getElementById('mainImg').src=this.src; document.querySelectorAll('.gallery-thumbs img').forEach(i=>i.classList.remove('active')); this.classList.add('active');">
+    </div>
+  </div>
+
+  <div class="pd-info">
+    <div class="kicker">تشكيلة الخريف</div>
+    <h1>كلاتش "روزا" — الإطار الملكي</h1>
+    <div class="price">٤٢٠ ر.س</div>
+    <p class="desc">
+      حياكة كروشيه كثيفة بخيط ساتان مخملي بلون النبيذي، تمنح الحقيبة شكلها الممتلئ الفاخر دون الحاجة لأي حشوة داخلية. إطار برونزي مذهّب منقوش يدويًا برأس غزال كلاسيكي، مع سلسلة معدنية طويلة قابلة للفصل لتحويل القطعة من كلاتش يد إلى حقيبة كتف.
+    </p>
+
+    <ul class="pd-specs">
+      <li><span>الخامة</span><span>خيط ساتان مخملي</span></li>
+      <li><span>الإطار</span><span>معدن برونزي مذهّب</span></li>
+      <li><span>الأبعاد</span><span>٣٢ × ١٨ سم تقريبًا</span></li>
+      <li><span>وقت التنفيذ</span><span>٣ إلى ٥ أيام عمل</span></li>
+    </ul>
+
+    <div class="qty-row">
+      <div class="qty-box">
+        <button onclick="document.getElementById('qty').textContent=Math.max(1,parseInt(document.getElementById('qty').textContent)-1)">−</button>
+        <span id="qty">1</span>
+        <button onclick="document.getElementById('qty').textContent=parseInt(document.getElementById('qty').textContent)+1">+</button>
+      </div>
+      <a href="contact.html" class="btn solid" style="flex:1;text-align:center;">اطلبي عبر واتساب</a>
+    </div>
+
+    <p style="font-size:0.9rem;color:#544540;">* القطعة تُحاك خصيصًا عند الطلب، لذلك الكمية محدودة جدًا.</p>
+  </div>
+</section>
+
+<section class="craft" id="craft">
+  <div>
+    <h2>الصناعة اليدوية</h2>
+    <p>لا نؤمن بالإنتاج السريع. كل تفصيلة في حقائبنا نتيجة قرار واعٍ لصالح الجودة على الكمية.</p>
+  </div>
+  <div class="craft-details">
+    <div class="craft-item">
+      <h4>الخيط</h4>
+      <p>خيط ساتان مخملي فاخر، ثقيل الملمس، يمنح الحقيبة شكلها الممتلئ المميز.</p>
+    </div>
+    <div class="craft-item">
+      <h4>المعادن</h4>
+      <p>إطارات وأقفال برونزية مذهّبة، بعضها مستوحى من تصاميم عتيقة، تُركّب يدويًا.</p>
+    </div>
+    <div class="craft-item">
+      <h4>الوقت</h4>
+      <p>ما بين ٨ إلى ١٢ ساعة حياكة متواصلة لإنجاز الحقيبة الواحدة.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <div class="logo">Shinny</div>
+    <p>حقائب كروشيه مخملية مصنوعة يدويًا بقطع محدودة، لكل امرأة تحب التفاصيل الهادئة والفخامة البسيطة.</p>
+  </div>
+  <div class="foot-links">
+    <div>
+      <h5>الموقع</h5>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="shop.html">التشكيلة</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="contact.html">تواصل</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>تواصل</h5>
+      <ul>
+        <li>واتساب</li>
+        <li>انستغرام</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">© Shinny — جميع الحقوق محفوظة</div>
+</footer>
+
+</body>
+</html>
